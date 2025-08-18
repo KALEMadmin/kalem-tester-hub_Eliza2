@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eliza Tester Hub</title>
+  <style>
+    body {
+      background-color: #f4f1ee;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    canvas {
+      border: 1px solid #ccc;
+      background-color: #fff;
+      margin-bottom: 2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 400px;
+      gap: 1rem;
+    }
+
+    input, textarea, button {
+      padding: 0.75rem;
+      border: 1px solid #aaa;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #6c5b7b;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #5a4a66;
+    }
+
+    #report-status {
+      margin-top: 1rem;
+      font-style: italic;
+      color: #4a4a4a;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Eliza's Tester Hub</h1>
+
+  <canvas id="elizaCanvas" width="300" height="300"></canvas>
+
+  <form id="elizaFeedbackForm">
+    <label for="feedback">Your feedback:</label>
+    <textarea id="feedback" name="feedback" rows="4" required></textarea>
+    <button type="submit">Send Feedback</button>
+    <div id="report-status"></div>
+  </form>
+
+  <script>
+    // Eliza avatar placeholder
+    const canvas = document.getElementById("elizaCanvas");
+    const ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#dcd6f7";
+    ctx.beginPath();
+    ctx.arc(150, 150, 100, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillStyle = "#6c5b7b";
+    ctx.font = "20px Segoe UI";
+    ctx.textAlign = "center";
+    ctx.fillText("Eliza", 150, 160);
+
+    // Feedback form logic
+    document.getElementById("elizaFeedbackForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const feedback = document.getElementById("feedback").value;
+      if (feedback.trim() === "") {
+        document.getElementById("report-status").innerText = "Please enter feedback before submitting.";
+        return;
+      }
+      document.getElementById("report-status").innerText = "Feedback sent! Thank you 💜";
+      document.getElementById("elizaFeedbackForm").reset();
+    });
+  </script>
+</body>
+</html>
