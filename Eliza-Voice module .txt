@@ -1,0 +1,5 @@
+ElizaApp/
+├── modules/
+│   ├── emotional_memory/
+│   │   ├── MemoryManager.kt
+│   │   └── memory_data.json

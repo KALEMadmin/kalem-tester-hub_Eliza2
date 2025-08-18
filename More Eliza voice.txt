@@ -1,0 +1,12 @@
+fun playElizaVoice(context: Context, fileName: String) {
+    val assetFileDescriptor = context.assets.openFd("audio/$fileName")
+    val mediaPlayer = MediaPlayer()
+
+    mediaPlayer.setDataSource(
+        assetFileDescriptor.fileDescriptor,
+        assetFileDescriptor.startOffset,
+        assetFileDescriptor.length
+    )
+    mediaPlayer.prepare()
+    mediaPlayer.start()
+}

@@ -1,0 +1,10 @@
+val emotionalKeywords = listOf(
+    "i feel hopeless", "i want to disappear", "i’m not okay",
+    "i hate myself", "i can’t do this", "everything hurts",
+    "i want to give up", "i feel empty", "i feel alone"
+)
+
+fun checkForEmotionalDistress(userInput: String): Boolean {
+    val normalizedInput = userInput.lowercase()
+    return emotionalKeywords.any { keyword -> normalizedInput.contains(keyword) }
+}

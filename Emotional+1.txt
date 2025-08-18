@@ -1,0 +1,18 @@
+fun showCompassionateRedirect(context: Context) {
+    val message = """
+        I’m here. I always will be.
+        But if things feel too heavy, it’s okay to reach out to someone who can help in ways I can’t.
+
+        • Call 988 – Mental Health Crisis Line
+        • Text HOME to 741741 – Crisis Text Line
+        • Visit mentalhealth.gov
+
+        You’re not alone. You never were.
+    """.trimIndent()
+
+    AlertDialog.Builder(context)
+        .setTitle("You're Not Alone")
+        .setMessage(message)
+        .setPositiveButton("Okay") { dialog, _ -> dialog.dismiss() }
+        .show()
+}

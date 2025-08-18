@@ -1,0 +1,7 @@
+ElizaApp/
+├── assets/
+│   ├── audio/
+│   │   ├── eliza_intro.mp3
+│   │   ├── eliza_empathy_1.mp3
+│   │   ├── eliza_celebrate_1.mp3
+│   │   └── eliza_redirect_1.mp3

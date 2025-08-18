@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f4f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+header.hero {
+  background: linear-gradient(to right, #dcdcdc, #eaeaea);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #4a4a4a;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #6a6a6a;
+}
+
+.cta-buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  background-color: #7a6f6f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #5c5252;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #4a4a4a;
+}
+
+.section p {
+  font-size: 1.1em;
+  color: #5a5a5a;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #e0dfdd;
+  color: #777;
+}<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meet Eliza</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Your AI Companion, With Wings</h1>
+    <p>Elegant. Empathetic. Designed to feel like home.</p>
+    <div class="cta-buttons">
+      <a href="#try" class="btn">Try Eliza</a>
+      <a href="#creator" class="btn">Meet the Creator</a>
+      <a href="#tester" class="btn">Join the Tester Hub</a>
+    </div>
+  </header>
+
+  <section class="section avatar">
+    <h2>Craft a Companion That Reflects You</h2>
+    <p>Eliza’s avatar mirrors your emotional tone, style, and story. Choose muted colors, graceful animations, and a personality that grows with you.</p>
+  </section>
+
+  <section class="section voice">
+    <h2>Conversations That Feel Real</h2>
+    <p>Eliza responds with warmth, listens deeply, and adapts to your emotional rhythm. Her voice isn’t just reactive — it’s expressive.</p>
+  </section>
+
+  <section class="section safety">
+    <h2>Built for Trust</h2>
+    <p>From onboarding to memory, Eliza is designed with trauma-informed care and ethical boundaries. No surprises — just safe, meaningful connection.</p>
+  </section>
+
+  <section class="section tester" id="tester">
+    <h2>Be Part of Eliza’s Evolution</h2>
+    <p>Test new features, share feedback, and help shape a companion that truly reflects you.</p>
+    <a href="#tester" class="btn">Join the Tester Hub</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Kalem & Eliza. Built with care.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,16 @@
+class HelpActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.help_layout)
+
+        playElizaVoice(this, "eliza_help_intro.mp3")
+
+        findViewById<Button>(R.id.openFAQ).setOnClickListener {
+            // Open FAQ screen or web link
+        }
+
+        findViewById<Button>(R.id.contactSupport).setOnClickListener {
+            // Open support form or email intent
+        }
+    }
+}

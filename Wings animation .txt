@@ -1,0 +1,53 @@
+.voice-player {
+  margin-top: 30px;
+}
+
+.voice-player button {
+  margin: 8px;
+  padding: 10px 20px;
+  background-color: #7a6f6f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.voice-player button:hover {
+  background-color: #5c5252;
+}<div class="voice-player">
+  <h3>Try Eliza’s Voice</h3>
+  <button onclick="playVoice('calm')">Calm</button>
+  <button onclick="playVoice('curious')">Curious</button>
+  <button onclick="playVoice('warm')">Warm</button>
+</div>.eliza-avatar {
+  position: relative;
+  display: inline-block;
+}
+
+.eliza-avatar img {
+  max-width: 300px;
+}
+
+.wing {
+  position: absolute;
+  top: 0;
+  width: 120px;
+  opacity: 0.9;
+  animation: flap 3s infinite ease-in-out;
+}
+
+.wing.left {
+  left: -100px;
+  transform-origin: right center;
+}
+
+.wing.right {
+  right: -100px;
+  transform-origin: left center;
+}
+
+@keyframes flap {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(5deg); }
+}

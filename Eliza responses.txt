@@ -1,0 +1,22 @@
+val momName = MemoryManager.recall("mom_name")
+if (momName != null) {
+    speak("How’s $momName doing today?")
+}object MemoryManager {
+    private val memoryMap = mutableMapOf<String, String>()
+
+    fun remember(key: String, value: String) {
+        memoryMap[key] = value
+    }
+
+    fun recall(key: String): String? {
+        return memoryMap[key]
+    }
+
+    fun forget(key: String) {
+        memoryMap.remove(key)
+    }
+
+    fun getAllMemories(): Map<String, String> {
+        return memoryMap
+    }
+}

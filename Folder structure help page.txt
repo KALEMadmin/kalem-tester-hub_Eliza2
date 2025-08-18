@@ -1,0 +1,8 @@
+ElizaApp/
+├── modules/
+│   ├── help_page/
+│   │   ├── HelpActivity.kt
+│   │   ├── help_layout.xml
+│   │   └── eliza_voice_guides/
+│       ├── eliza_help_intro.mp3
+│       ├── eliza_encouragement.mp3

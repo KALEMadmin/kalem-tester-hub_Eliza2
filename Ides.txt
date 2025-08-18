@@ -1,0 +1,22 @@
+.avatar-preview .avatar-box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar-box img {
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease;
+}
+
+.avatar-box img:hover {
+  transform: scale(1.05);
+}<section class="section avatar-preview">
+  <h2>Eliza’s Look</h2>
+  <p>Graceful wings. Muted tones. A presence that feels safe and mysterious.</p>
+  <div class="avatar-box">
+    <img src="eliza-avatar.png" alt="Eliza Avatar Preview" />
+  </div>
+</section>
